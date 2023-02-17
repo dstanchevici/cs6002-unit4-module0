@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class XYPoints4 {
+
+    public static void main (String[] argv)
+    {
+	double[] x = {2, 5, 5};
+	double[] y = {3, 7, 3};
+
+	double[] d = distance (x,y);
+    }
+
+}
