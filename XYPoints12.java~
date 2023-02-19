@@ -1,0 +1,5 @@
+class XYPoint {
+    double x;
+    double y;
+}
+
