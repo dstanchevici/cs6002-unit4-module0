@@ -14,5 +14,9 @@ public class XYPoints14 {
 	p.point = new XYPoint ();
 	p.point.x = 5;
 	p.point.y = 7;
+
+	p.point.point = new XYPoint ();
+	p.point.point.x = 5;
+	p.point.point.y = 3;
     }
 }
