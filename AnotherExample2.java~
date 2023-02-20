@@ -1,0 +1,36 @@
+
+class Famous3Initials {
+
+    char first, second, third;
+    int birthYear;
+
+    public void print ()
+    {
+	System.out.println ("" + first + second + third + ", born " + birthYear);
+    }
+
+}
+
+
+public class AnotherExample2 {
+
+    public static void main (String[] argv)
+    {
+	Famous3Initials f = new Famous3Initials ();
+	f.first = 'J';
+	f.second = 'F';
+	f.third = 'K';
+	f.birthYear = 1917;
+	f.print ();
+
+	// ADD YOUR CODE HERE to create the 3 additional objects.
+
+	// THEN, add code for a roving pointer p.
+	Famous3Initials p = f;
+	p.print();
+
+	// ADD the remaining code below to have p point to the second 
+	// instance and print, then the third instance and print etc.
+    }
+
+}
