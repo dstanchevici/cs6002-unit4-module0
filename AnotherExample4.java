@@ -1,3 +1,4 @@
+// Unit 4, Module 0, Ex-s 27 and 30.
 
 class Famous3Initials {
 
@@ -5,15 +6,15 @@ class Famous3Initials {
     int birthYear;
     Famous3Initials point;
 
-    public void print ()
+    public String toString ()
     {
 	String s = "";
 	for (char c: initials) s += c;
-	System.out.println (s + ", born " + birthYear);
+	s = s + ", born " + birthYear;
+	return s;
     }
 
 }
-
 
 public class AnotherExample4 {
 
@@ -24,7 +25,6 @@ public class AnotherExample4 {
 	f.initials[1] = 'F';
 	f.initials[2] = 'K';
 	f.birthYear = 1917;
-	f.print ();
 
 	f.point = new Famous3Initials ();
 	f.point.initials[0] = 'F';
@@ -43,7 +43,14 @@ public class AnotherExample4 {
 	f.point.point.point.initials[1] = 'L';
 	f.point.point.point.initials[2] = 'K';
 	f.point.point.point.birthYear = 1929;
-	
+
+	Famous3Initials p = f; // 1.
+
+	while (p != null) {
+	    System.out.println (p);
+	    p = p.point;
+	}	
+
     }
 
 }
